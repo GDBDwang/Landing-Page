@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Richard's Websites Mobile</title>
+    <title>Richard's Websites</title>
     <style>
         /* 省略了部分CSS代码，以保持简洁 */
         body, html {
@@ -21,7 +21,7 @@
             overflow: hidden; /* 防止内容溢出 */
         }
 
-        /* 保证页面在12:9的手机屏幕上完整显示 */
+        /* 保证页面在12:9或更窄的手机屏幕上完整显示 */
         @media (max-aspect-ratio: 12/9) {
             body, html {
                 height: 100vh; /* 视口高度 */
@@ -33,6 +33,7 @@
             font-size: 2.5em; /* 适当减小字体大小 */
             color: #34495e; /* 修改标题颜色为深蓝色 */
             margin: 0;
+            margin-bottom: -7px; /* 可根据需要调整标题与内容的间距 */
         }
 
         .container {
@@ -42,6 +43,8 @@
             gap: 10px; /* 减小间距 */
             justify-content: center;
             max-width: 600px; /* 限制最大宽度，保证内容不过宽 */
+            margin-top: 20px; /* 可根据需要调整顶部间距 */
+            margin-bottom: 20px; /* 可根据需要调整底部间距 */
         }
 
         .module {
@@ -51,7 +54,7 @@
             width: 48%; /* 调整宽度以适应两列布局 */
             transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
-            padding: 20px;
+            padding: 10px; /* 减小内边距以缩短模块长度 */
         }
 
         .module h2 {
@@ -64,14 +67,14 @@
         .module p {
             color: #fff;
             font-size: 1em; /* 适当减小字体大小 */
-            margin-bottom: 10px; /* 修正了原代码中此处的不完整 */
+            margin-bottom: 10px; /* 修正了原代码中此处的不完整，并确保有适当的底部间距 */
         }
 
         .module a {
             color: #fff;
             text-decoration: none;
             background-color: #d32f2f;
-            padding: 10px 20px;
+            padding: 8px 16px; /* 减小按钮内边距以适应更短的模块长度 */
             border-radius: 5px;
             transition: background-color 0.3s;
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);

@@ -1,0 +1,22 @@
+<title>Device Detection</title>
+    <script>
+        function detectDeviceType() {
+            var userAgent = navigator.userAgent.toLowerCase();
+            if (/mobile|android|touch|webos|iphone|ipod/i.test(userAgent)) {
+                // 如果是手机端，则跳转到手机端页面
+                window.location.href = './mobile/';
+            } else {
+                // 如果是电脑端，则跳转到电脑端页面
+                window.location.href = './desktop/';
+            }
+        }
+
+        // 在页面加载完成后调用函数来检测设备类型
+        window.onload = detectDeviceType;
+    </script>
+</head>
+<body>
+    <!-- 这个页面将很快跳转到手机端或电脑端的页面 -->
+    <noscript>
+        <p>JavaScript is required to detect your device type and redirect you to the appropriate page.</p>
+    </noscript>

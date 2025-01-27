@@ -18,11 +18,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            overflow: hidden; /* 防止内容溢出 */
+            overflow: hidden;
         }
 
-        /* 保证页面在12:9或更窄的手机屏幕上完整显示 */
-        @media (max-aspect-ratio: 12/9) {
+        /* 保证页面在10:9或更窄的手机屏幕上完整显示 */
+        @media (max-aspect-ratio: 10/9) {
             body, html {
                 height: 100vh; /* 视口高度 */
                 width: 100vw;  /* 视口宽度 */
@@ -30,54 +30,55 @@
         }
 
         header h1 {
-            font-size: 2.5em; /* 适当减小字体大小 */
-            color: #34495e; /* 修改标题颜色为深蓝色 */
+            font-size: 2em; /* 进一步减小字体大小以节省空间 */
+            color: #34495e;
             margin: 0;
-            margin-bottom: -7px; /* 可根据需要调整标题与内容的间距 */
+            margin-bottom: 10px; /* 可调整 */
         }
 
         .container {
-            width: 90%; /* 调整宽度以适应小屏幕 */
+            width: 90%;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px; /* 减小间距 */
+            gap: 10px;
             justify-content: center;
-            max-width: 600px; /* 限制最大宽度，保证内容不过宽 */
-            margin-top: 20px; /* 可根据需要调整顶部间距 */
-            margin-bottom: 20px; /* 可根据需要调整底部间距 */
+            max-width: 600px;
+            margin-top: -7px; /* 减小顶部间距 */
+            margin-bottom: 10px; /* 减小底部间距 */
         }
 
         .module {
-            background: linear-gradient(135deg, #8e44ad, #3498db); /* 修改为更加亮丽炫酷的渐变颜色 */
-            border-radius: 15px; /* 减小圆角半径 */
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            width: 48%; /* 调整宽度以适应两列布局 */
+            width: 48%;
             transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
-            padding: 10px; /* 减小内边距以缩短模块长度 */
+            padding: 10px 5px; /* 上下内边距减小，左右保持不变或根据需要调整 */
         }
 
         .module h2 {
-            font-size: 1.5em; /* 适当减小字体大小 */
+            font-size: 1.25em; /* 进一步减小字体大小 */
             color: #fff;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-            margin-bottom: 10px;
+            margin-bottom: 5px; /* 减小间距 */
         }
 
         .module p {
             color: #fff;
-            font-size: 1em; /* 适当减小字体大小 */
-            margin-bottom: 10px; /* 修正了原代码中此处的不完整，并确保有适当的底部间距 */
+            font-size: 0.9em; /* 进一步减小字体大小 */
+            margin-bottom: 10px;
         }
 
         .module a {
             color: #fff;
             text-decoration: none;
             background-color: #d32f2f;
-            padding: 8px 16px; /* 减小按钮内边距以适应更短的模块长度 */
+            padding: 5px 10px; /* 减小按钮内边距 */
             border-radius: 5px;
             transition: background-color 0.3s;
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            font-size: 0.9em; /* 可选：进一步减小按钮内文字大小 */
         }
     </style>
 </head>
